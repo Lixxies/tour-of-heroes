@@ -1,1 +1,44 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    margin: 1rem;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+}
+
+main {
+    margin: auto;
+    width: max-content;
+    padding: 2rem;
+    background-color: #dadada;
+    border-radius: 10px;
+
+}
+
+h2 {
+    margin: 0;
+    margin: 1.5rem 0;
+    text-align: center;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+input {
+    margin: 0 0.5rem 0 0.5rem;
+}

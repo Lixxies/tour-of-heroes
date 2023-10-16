@@ -1,0 +1,58 @@
+@use '../../css/mixins';
+
+.badge {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 0.5rem;
+    background-color: #313355;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.heroButton {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    height: fit-content;
+    width: 100%;
+    text-align: start;
+    border: 0;
+    border-radius: 5px;
+    background: none;
+    background-color: #ffffff;
+
+        span {
+            height: fit-content;
+            margin: auto 0;
+        }
+
+        button {
+            @include mixins.button;
+            border-radius: inherit;
+        }
+
+        .name {
+            font-size: medium;
+            margin: auto 1rem;
+        }
+}
+
+.selected {
+    background-color: #000;
+    color: #fff;
+}
+
+.addHeroButton {
+    @include mixins.button;
+    padding: 0.5rem;
+}
+
+.heroesGrid {
+    display: grid;
+    width: max-content;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    row-gap: 0.5rem;
+}
+
+

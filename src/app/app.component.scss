@@ -1,0 +1,17 @@
+@use 'css/mixins';
+
+.topNav {
+    display: grid;
+    margin-top: 1rem;
+    width: fit-content;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+
+    .navItem {
+        @include mixins.button;
+        font-size: 25px;
+        font-weight: bold;
+        padding: 0.7rem;
+        text-align: center;
+    }
+}
